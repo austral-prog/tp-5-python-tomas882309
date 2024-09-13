@@ -55,6 +55,7 @@ class Library:
                         return f"Unable to find the data for the values: ISBN {isbn} and DNI: {dni}"
             else:
                 return f"Unable to find the data for the values: ISBN {isbn} and DNI: {dni}"
+        return f"Book {isbn} is not available"
 
 
     # 2.2 Check in book
@@ -76,6 +77,7 @@ class Library:
                         return f"Unable to find the data for the values: ISBN {isbn} and DNI: {dni}"
             else:
                 return f"Book {isbn} is not available"
+        return f"Book {isbn} is not available"
 
     # Utils
     def add_user(self, dni: str, name: str)->None:
