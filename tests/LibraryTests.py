@@ -9,6 +9,7 @@ class LibraryTests(unittest.TestCase):
     def setUp(self):
         self.library = Library()
 
+
     def test_add_book(self):
         self.library.add_book("9780743273565", "The Great Gatsby", "Fitzgerald")
         assert len(self.library.get_books()) == 1
